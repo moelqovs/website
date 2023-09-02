@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "qwitcher-grypen";
+    src: url(../font/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 10px 25px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    background-color: #8338ec;
+    color: whitesmoke;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    font-family: "roboto", "regular";
+}
+
+.title{
+    color: #8338ec;
+    font-weight: bold;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-family: "qwitcher-grypen";
+    font-size: 3.5em;
+    color: #8338ec;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #8338ec;
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/hero.jpg");
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h2{
+    font-size: 3.5em;
+}
+
+#nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#servicios{
+    background-color: #000814;
+    color: whitesmoke;
+}
+
+#servicios .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#servicios p{
+    display: none;
+}
+
+#servicios .carta{
+    margin: 20px 0;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/firstChild.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/secondChild.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/thirdChild.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#contacto .container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+footer{
+    background-color:#000814;
+    color: whitesmoke;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 12px;
+}
+
+footer p{
+    margin: 0;
+}
