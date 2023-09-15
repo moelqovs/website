@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <p class="logo"> Taste </p>
             <nav>
@@ -24,15 +24,42 @@
     </header>
 
     <section id="hero" class="hero">
-        <h1> Catering <br> para Eventos Sociales </h1>
+        <div class="container">
+            <div class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider-section">
+                        <img src="./img/hero2.jpg" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/hero3.jpg" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/hero4.jpg" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/hero.jpg" alt="" class="slider-img">
+                    </div> 
+                </div>
+                <div class="slider-btn slider-btn-right" id="btn-right">
+                    &#62;
+                </div>
+                <div class="slider-btn slider-btn-left" id="btn-left">
+                    &#60;
+                </div>    
+            </div>
+        </div>
     </section>
+
 
     <section id="nosotros">
         <div class="container">
             <div class="img-container"></div>
-            <h2> Somos <span class="title"> Taste Catering</span> </h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quod totam soluta, sequi culpa perspiciatis nam saepe reiciendis architecto incidunt temporibus inventore vel labore, voluptates unde explicabo accusamus, ad rerum.
-            </p>
+            <div class="texto">
+                <h2> Somos <span class="title"> Taste Catering</span> </h2>
+                <p> Desde el año 2020,  ofrecemos nuestros servicios para eventos, brindando una amplia variedad y calidad de acuerdo a las necesidades de nuestros clientes.</p>
+                <p> Nuestro objetivo es crear momentos inolvidables combinando ingredientes frescos y técnicas culinarias para cautivar el paladar de los invitados.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -42,17 +69,28 @@
             <div class="cards">
                 <div class="carta">
                     <h3> Catering Casamiento </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium autem unde doloribus ex officiis numquam, quae dolore error, odit eum nobis reprehenderit! Incidunt dolorum doloribus quas cumque repellendus molestiae.</p>
+                    <p>Entrada: ensalada de alcauciles con nueces, jamón crudo y espinaca.</p>
+                    <p>Plato principal: pollo a la naranja con salsa de arándanos </p>
+                    <p>Acompañamiento: Repollitos de bruselas asados con portobellos y aros de cebolla crugientes.</p>
+                    <p>Potres: carrot cake con crema chantilly e hilos de caramelo</p>
                     <button> + Info </button>
                 </div>
                 <div class="carta">
                     <h3> Catering Corporativo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium autem unde doloribus ex officiis numquam, quae dolore error, odit eum nobis reprehenderit! Incidunt dolorum doloribus quas cumque repellendus molestiae.</p>
+                    <p>Canapés y bocaditos variados</p>
+                    <p>Brusquetas de jamón crudo, rúcula y tomates confitados</p>
+                    <p>Pinchos de pollo con salsa de soja y albondiguitas con alioli</p>
+                    <p>Canastitas de shampiñón y puerro a la crema</p>
+                    <p>Pancitos saborizados con pollo al verdeo </p>
+                    <p>Figacitas con carne desilachada con cebolla caramelizada </p>
+                    <p>Trufas de chocolate y nuez y brownie con dulce de leche</p>
                     <button> + Info </button>
                 </div>
                 <div class="carta">
                     <h3> Catering Cumpleaños </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium autem unde doloribus ex officiis numquam, quae dolore error, odit eum nobis reprehenderit! Incidunt dolorum doloribus quas cumque repellendus molestiae.</p>
+                    <p>Recepción: tabla de fiambres y quesos</p>
+                    <p>Plato principal: Crepes de verdura, jamón o queso con salsa a elección</p>
+                    <p>Postre: almendrado con salsa de chocolate, dulce de leche o frutilla</p>
                     <button> + Info </button>
                 </div>
             </div>
@@ -61,8 +99,15 @@
 
     <section id="contacto">
         <div class="container">
-            <h2> Consulta <span class="title"> Presupuesto </span> </h2>
-            <p>whatsapp</p>
+            <h2> Contactanos </h2>
+            <form action="contact" class="form-container">
+            <h3> Consultas </h3>
+                <input class="controls" type="text" name="nombre" id="nombre"  placeholder="Nombre">
+                <input class="controls" type="text" name="email" id="email" placeholder="Email">
+                <input class="controls" type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                <input class="controls" type="text" name="consulta" id="consulta" placeholder="Realice su consulta">
+                <button type="submit"> Enviar </button>
+            </form>
         </div>
     </section>
 
@@ -72,6 +117,7 @@
         </div>
     </footer>
 
+    <script src="./js/slider.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
             crossorigin="anonymous">

@@ -58,64 +58,98 @@ button:hover{
     font-weight: bold;
 }
 
-header{
+#header{
     background-color: rgb(245,245,245);
+    width: 100%;
 }
 
-header .logo{
+#header .logo{
     margin: 0;
-    padding: 25px 30px;
+    padding: 20px 30px;
     font-family: "qwitcher-grypen";
-    font-size: 3.5em;
+    font-size: 3.2em;
     color: #8338ec;
 }
 
-header .container{
+#header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header.nav{
+#header.nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
-header a{
+#header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-header a:hover{
+#header a:hover{
     color: #8338ec;
 }
 
-
 #hero{
     display: flex;
-    align-items: center;
-    justify-content:center;
-    text-align:center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../img/hero.jpg");
-    color: whitesmoke;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    min-height: 90hv;
+    background:  rgb(245,245,245);
+    padding-top: 60px;
 }
 
-#hero h2{
-    font-size: 3.5em;
+.container-slider{
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #fff,
+                0  5px 25px;
+    position: relative;
+}
+
+.slider{
+    height: 400px;
+    width: 400%;
+    display: flex;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn{
+    position: absolute;
+    height:40px;
+    width:40px;
+    background: rgba (255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+    color:rgb(245,245,245);
+    cursor: pointer;
+}
+
+.slider-btn-left{
+    left: 2px;
+}
+
+.slider-btn-right{
+    right: 2px;
 }
 
 #nosotros .container{
@@ -135,7 +169,7 @@ header a:hover{
 
 #servicios h2{
     margin-top: 0;
-    font-size: 3.2em;
+    font-size: 3.0em;
 }
 
 #servicios p{
@@ -191,6 +225,38 @@ header a:hover{
     height: 80vh;
 }
 
+#contacto h2{
+    font-size: 2.5em;
+}
+
+#contacto h3{
+    color:#8338ec;
+}
+
+#contacto .form-container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    background-color: #24303c;
+    border-radius: 10px;
+}
+
+#contacto .controls{
+    width: 80%;
+    margin: 8px 0;
+    border-radius: 4px;
+    background-color: #24303c;
+    border:1px solid #8338ec;
+}
+
+.controls:nth-child(5){
+    height: 20%;
+}
+
 footer{
     background-color:#000814;
     color: whitesmoke;
@@ -206,4 +272,46 @@ footer .container{
 
 footer p{
     margin: 0;
+}
+
+@media (min-width: 720px ){
+
+    #header{
+        position: fixed;
+        width: 100%;
+    }
+
+    #header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header .nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right:20px;
+    }
+
+    #nosotros .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nosotros .img-container{
+        background-image: url("../img/nosotros.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nosotros .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        max-width: 600px;
+    }
 }
